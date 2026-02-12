@@ -6,7 +6,7 @@ import { Card } from '../ui/card';
 import { Badge } from '../ui/badge';
 
 export function ExperienceSection() {
-  const featuredExperiences = experiences.slice(0, 2);
+  const featuredExperiences = experiences.slice(0, 4);
 
   return (
     <section id="experience" className="py-20 md:py-32 bg-background">

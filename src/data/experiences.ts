@@ -1,6 +1,51 @@
 
 export const experiences = [
   {
+    role: "Founder",
+    company: "F1",
+    period: "Mar 2025 — Present",
+    location: "Cairo, Egypt",
+    type: "Current Role",
+    description: "My own business provides services that combine business, software, and marketing in one place. I have worked in the Egyptian and Saudi markets.",
+    keyAchievements: [
+      "Pioneered the company's vision for AI integration in creative industries.",
+      "Secured initial seed funding and built the foundational engineering team.",
+      "Spearheaded the development of our flagship AI-powered product.",
+      "Established strategic partnerships with key industry players.",
+    ],
+    technologies: ["AI Strategy", "Business Development", "Product Management", "Genkit", "Next.js"],
+  },
+  {
+    role: "Martech",
+    company: "Madinty Light",
+    period: "Jan 2024 — Jun 2024",
+    location: "Cairo, Egypt",
+    type: "Full-time",
+    description: "Worked in marketing and developed the company's website for a real estate marketing company specializing in property promotion and sales.",
+    keyAchievements: [
+      "Developed and maintained the company's website",
+      "Implemented digital marketing strategies for real estate properties",
+      "Created engaging content for property listings and campaigns",
+      "Optimized online presence to increase lead generation",
+    ],
+    technologies: ["Web Development", "Digital Marketing", "SEO", "Content Management", "Real Estate Tech"],
+  },
+  {
+    role: "Software Engineer",
+    company: "Blue Desk",
+    period: "Jul 2023 — Dec 2023",
+    location: "Cairo, Egypt",
+    type: "Full-time",
+    description: "Worked as a software engineer developing websites and applications for clients while managing and maintaining company servers.",
+    keyAchievements: [
+      "Developed custom websites and applications for multiple clients",
+      "Managed and maintained company server infrastructure",
+      "Implemented scalable solutions for client projects",
+      "Collaborated with cross-functional teams to deliver quality software",
+    ],
+    technologies: ["Web Development", "Application Development", "Server Management", "Database Administration", "DevOps"],
+  },
+  {
     role: "Head of IT",
     company: "Qudraat",
     period: "Dec 2024 — Feb 2025",
@@ -16,21 +61,6 @@ export const experiences = [
       "Achieved 95% satisfaction rate through automated feedback systems",
     ],
     technologies: ["Make.com", "Google Sheets", "WhatsApp API", "Custom GPT", "AI Tools", "N8N"],
-  },
-  {
-    role: "Founder",
-    company: "F1",
-    period: "Mar 2025 — Present",
-    location: "Cairo, Egypt",
-    type: "Current Role",
-    description: "My own business provides services that combine business, software, and marketing in one place. I have worked in the Egyptian and Saudi markets.",
-    keyAchievements: [
-      "Pioneered the company's vision for AI integration in creative industries.",
-      "Secured initial seed funding and built the foundational engineering team.",
-      "Spearheaded the development of our flagship AI-powered product.",
-      "Established strategic partnerships with key industry players.",
-    ],
-    technologies: ["AI Strategy", "Business Development", "Product Management", "Genkit", "Next.js"],
   },
   {
     role: "Social Media Specialist",
