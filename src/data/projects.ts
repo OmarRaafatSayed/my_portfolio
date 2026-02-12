@@ -50,9 +50,19 @@ export const allProjects = [
     tags: ['React', 'Tailwind CSS', 'Framer Motion'],
     links: [],
   },
-  // App Projects
   {
     id: 6,
+    category: 'Web',
+    title: 'Mawgood',
+    description: 'An electronic marketing platform that supports the Egyptian product + ease of trade for merchants + provides jobs',
+    image: '/projects/WEB/Mawgood.jpg',
+    aiHint: 'ecommerce platform',
+    tags: ['E-commerce', 'Marketing', 'Platform'],
+    links: [{ label: 'Visit Website', url: 'https://mawgood.cloud/' }],
+  },
+  // App Projects
+  {
+    id: 7,
     category: 'App',
     title: 'Mobile App Project',
     description: 'Cross-platform mobile application with native performance and modern UI.',
@@ -63,7 +73,7 @@ export const allProjects = [
   },
   // CRM Projects
   {
-    id: 7,
+    id: 8,
     category: 'CRM',
     title: 'CRM System',
     description: 'Custom CRM solution for business management and customer relationship optimization.',
@@ -74,7 +84,7 @@ export const allProjects = [
   },
   // UI UX Projects
   {
-    id: 8,
+    id: 9,
     category: 'UI UX',
     title: 'UI UX Design Project',
     description: 'Modern user interface and user experience design with focus on usability and aesthetics.',
@@ -85,7 +95,7 @@ export const allProjects = [
   },
   // Marketing & Business Projects
   {
-    id: 9,
+    id: 10,
     category: 'Marketing & Business',
     title: 'Marketing Campaign 1',
     description: 'Strategic marketing campaign with comprehensive brand development and market analysis.',
@@ -95,7 +105,7 @@ export const allProjects = [
     links: [],
   },
   {
-    id: 10,
+    id: 11,
     category: 'Marketing & Business',
     title: 'Business Development Project',
     description: 'Business growth strategy and market expansion planning with ROI optimization.',
@@ -105,7 +115,7 @@ export const allProjects = [
     links: [],
   },
   {
-    id: 11,
+    id: 12,
     category: 'Marketing & Business',
     title: 'Brand Identity Project',
     description: 'Complete brand identity design and marketing materials for business transformation.',
@@ -115,7 +125,7 @@ export const allProjects = [
     links: [],
   },
   {
-    id: 12,
+    id: 13,
     category: 'Marketing & Business',
     title: 'Digital Marketing Strategy',
     description: 'Comprehensive digital marketing strategy with social media and content marketing focus.',
