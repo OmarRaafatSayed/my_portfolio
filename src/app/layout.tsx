@@ -12,6 +12,7 @@ import { Loader } from '@/components/Loader';
 import { ThemeTransitionProvider } from '@/context/ThemeTransitionContext';
 import { ThemeTransition } from '@/components/ThemeTransition';
 import { CookieConsent } from '@/components/CookieConsent';
+import { MobileNav } from '@/components/MobileNav';
 
 export default function RootLayout({
   children,
@@ -78,8 +79,9 @@ export default function RootLayout({
                   transition={{ duration: 0.5 }}
                 >
                   <Header />
-                  <main>{children}</main>
+                  <main className="pb-20 md:pb-0">{children}</main>
                   <Footer />
+                  <MobileNav />
                   <Toaster />
                   <BackToTopButton />
                   <CookieConsent />
