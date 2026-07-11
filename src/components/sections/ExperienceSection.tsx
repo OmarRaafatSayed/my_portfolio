@@ -1,12 +1,9 @@
 import { SectionAnimator } from '@/components/SectionAnimator';
-import { experiences } from '@/data/experiences';
 import Link from 'next/link';
 import { DownloadCvButton } from '../DownloadCvButton';
 import { Card } from '../ui/card';
-import { Badge } from '../ui/badge';
 
 export function ExperienceSection() {
-  const featuredExperiences = experiences.slice(0, 4);
 
   return (
     <section id="experience" className="py-20 md:py-32 bg-background">
@@ -15,25 +12,54 @@ export function ExperienceSection() {
           <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Professional <span className="text-primary">Experience</span>
           </h2>
-          <p className="max-w-3xl mx-auto mt-4 text-lg text-muted-foreground">
-            I serve the business's commercial vision through my expertise in technology (programming and security).
+          <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
+            Delivering technology-driven solutions across multiple markets, serving businesses' commercial visions through software, marketing, and automation.
           </p>
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+            <div className="flex items-center gap-3 bg-card border border-border rounded-2xl px-6 py-3 shadow-sm">
+              <span className="text-2xl">🇪🇬</span>
+              <div className="text-left">
+                <p className="font-bold text-foreground text-sm">Egyptian Market</p>
+                <p className="text-xs text-muted-foreground">Primary Operations</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 bg-card border border-border rounded-2xl px-6 py-3 shadow-sm">
+              <span className="text-2xl">🇩🇪</span>
+              <div className="text-left">
+                <p className="font-bold text-foreground text-sm">German Market</p>
+                <p className="text-xs text-muted-foreground">European Reach</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 bg-card border border-border rounded-2xl px-6 py-3 shadow-sm">
+              <span className="text-2xl">🇸🇦</span>
+              <div className="text-left">
+                <p className="font-bold text-foreground text-sm">Saudi Market</p>
+                <p className="text-xs text-muted-foreground">GCC Expansion</p>
+              </div>
+            </div>
+          </div>
         </SectionAnimator>
         
         <SectionAnimator delay={0.2}>
-          <div className="flex justify-center mb-8">
-            <Badge variant="secondary" className="bg-primary/10 text-primary border border-primary/20 py-1 px-3 text-sm font-semibold">
-              Currently
-            </Badge>
-          </div>
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-            {featuredExperiences.map((exp, index) => (
-              <Card key={index} className="p-8 text-center bg-background border-2 border-transparent hover:border-primary/50 transition-colors duration-300 hover:shadow-lg">
-                <h3 className="text-xl font-bold font-headline">{exp.role}</h3>
-                <p className="text-md text-primary font-semibold my-1">{exp.company}</p>
-                <p className="text-sm text-muted-foreground mt-2">{exp.description.split('.')[0] + '.'}</p>
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="p-8 text-center bg-background border-2 border-transparent hover:border-primary/50 transition-colors duration-300 hover:shadow-lg">
+              <div className="text-5xl mb-4">🇪🇬</div>
+              <h3 className="text-xl font-bold font-headline">Egyptian Market</h3>
+              <p className="text-md text-primary font-semibold my-1">Primary Operations</p>
+              <p className="text-sm text-muted-foreground mt-2">Built and scaled multiple businesses across tech, marketing, and education sectors in Egypt.</p>
+            </Card>
+            <Card className="p-8 text-center bg-background border-2 border-primary/30 hover:border-primary/50 transition-colors duration-300 hover:shadow-lg">
+              <div className="text-5xl mb-4">🇩🇪</div>
+              <h3 className="text-xl font-bold font-headline">German Market</h3>
+              <p className="text-md text-primary font-semibold my-1">European Reach</p>
+              <p className="text-sm text-muted-foreground mt-2">Delivered software and automation solutions for clients operating in the German-speaking European market.</p>
+            </Card>
+            <Card className="p-8 text-center bg-background border-2 border-transparent hover:border-primary/50 transition-colors duration-300 hover:shadow-lg">
+              <div className="text-5xl mb-4">🇸🇦</div>
+              <h3 className="text-xl font-bold font-headline">Saudi Market</h3>
+              <p className="text-md text-primary font-semibold my-1">GCC Expansion</p>
+              <p className="text-sm text-muted-foreground mt-2">Provided business tech and marketing solutions for clients in the Saudi Arabian and GCC market.</p>
+            </Card>
           </div>
         </SectionAnimator>
 

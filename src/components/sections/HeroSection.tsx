@@ -20,7 +20,7 @@ export function HeroSection() {
   const [isDeleting, setIsDeleting] = useState(false)
   const [typingSpeed, setTypingSpeed] = useState(100)
 
-  const titles = ["Business Technologist", "Software engineer Trainer", "UI UX | Brand identity Designer", "Web | App developer"]
+  const titles = ["Technical team lead", "Business tech | Trainer"]
 
   // Smooth scroll function
   const scrollToSection = (sectionId: string) => {

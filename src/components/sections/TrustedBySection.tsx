@@ -9,6 +9,9 @@ const companies = [
   { name: 'Company 5', logo: '/images/companies/IMG-20250919-WA0007.jpg' },
   { name: 'Company 6', logo: '/images/companies/WhatsApp Image 2025-09-16 at 22.39.33_da112488.jpg' },
   { name: 'Omar Logo', logo: '/images/companies/لوجو.jpg' },
+  { name: 'IT-trendco', logo: '/images/companies/IT-trendco.jpeg' },
+  { name: 'Mawgood', logo: '/images/companies/mawgood.jpeg' },
+  { name: 'Micro-Engineering', logo: '/images/companies/Micro-Engineering.jpg' },
 ];
 
 export function TrustedBySection() {

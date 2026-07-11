@@ -6,7 +6,7 @@ export const experiences = [
     period: "Mar 2025 — Present",
     location: "Cairo, Egypt",
     type: "Current Role",
-    description: "My own business provides services that combine business, software, and marketing in one place. I have worked in the Egyptian and Saudi markets.",
+    description: "My own business provides services that combine business, software, and marketing in one place. I have worked across the Egyptian, German, and Saudi markets.",
     keyAchievements: [
       "Pioneered the company's vision for AI integration in creative industries.",
       "Secured initial seed funding and built the foundational engineering team.",
