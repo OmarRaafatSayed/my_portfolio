@@ -7,59 +7,68 @@ export interface Session {
   duration: string;
   date: string;
   category: string;
+  type: 'in-person' | 'online';
+  role: string;
+  location?: string;
+  details: {
+    overview: string;
+    topics: string[];
+    speakers?: { name: string; role: string }[];
+  };
 }
 
-export const sessionCategories = ['All', 'Business', 'Technology', 'Career', 'Marketing'];
+export const sessionCategories = ['All', 'Technology', 'Business', 'Career'];
 
 export const sessions: Session[] = [
   {
     id: 1,
-    title: 'Building Your First Startup',
-    description: 'Learn the fundamentals of starting a business from scratch',
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    duration: '45 min',
-    date: '2024-01-15',
-    category: 'Business',
+    title: 'Full Stack Development Workshop',
+    description: 'A hands-on workshop introducing Full Stack Development from the ground up — covering frontend, backend, and everything in between.',
+    thumbnail: '/images/session-1.jpeg',
+    videoUrl: '',
+    duration: '3 hrs',
+    date: '2024-06-10',
+    category: 'Technology',
+    type: 'in-person',
+    role: 'Speaker & Instructor',
+    location: 'Company HQ',
+    details: {
+      overview: 'I delivered this workshop as a speaker and instructor at the company headquarters. The session was designed for beginners with zero background — I walked attendees through the full picture of web development: how the frontend talks to the backend, how servers work, databases, APIs, and how everything connects. The goal was to give participants a clear mental model of the entire stack before diving into any specialization.',
+      topics: [
+        'What is Full Stack Development?',
+        'Frontend fundamentals: HTML, CSS, JavaScript',
+        'Backend basics: servers, APIs, and databases',
+        'How frontend and backend communicate',
+        'Choosing your learning path',
+        'Real-world project walkthrough',
+      ],
+    },
   },
   {
     id: 2,
-    title: 'Web Development Best Practices',
-    description: 'Modern approaches to building scalable web applications',
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    duration: '60 min',
-    date: '2024-02-10',
-    category: 'Technology',
-  },
-  {
-    id: 3,
-    title: 'Career Growth Strategies',
-    description: 'How to advance your career in tech industry',
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    duration: '40 min',
-    date: '2024-03-05',
+    title: 'How to Start Any Career — Panel Session',
+    description: 'An online panel session with two guest speakers from different career tracks, discussing how to kick off any career from scratch.',
+    thumbnail: '/images/session-2.png',
+    videoUrl: '',
+    duration: '2 hrs',
+    date: '2024-09-20',
     category: 'Career',
-  },
-  {
-    id: 4,
-    title: 'Digital Marketing Essentials',
-    description: 'Master the basics of digital marketing and social media',
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    duration: '50 min',
-    date: '2024-03-20',
-    category: 'Marketing',
-  },
-  {
-    id: 5,
-    title: 'AI in Business',
-    description: 'Leveraging artificial intelligence for business growth',
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    duration: '55 min',
-    date: '2024-04-01',
-    category: 'Technology',
+    type: 'online',
+    role: 'Host & Speaker',
+    details: {
+      overview: 'I hosted and spoke in this online session focused on career beginnings. Coming from a business development background combined with a tech foundation, I shared my own journey and how the two worlds intersect. The session featured two guest speakers from completely different fields to give attendees a broad perspective on how to start — regardless of their industry. We covered mindset, first steps, mistakes to avoid, and how to build momentum early on.',
+      topics: [
+        'How to define your career direction',
+        'Building skills with no experience',
+        'Networking and getting your first opportunity',
+        'Business development as a career path',
+        'Combining tech and business backgrounds',
+        'Q&A with speakers',
+      ],
+      speakers: [
+        { name: 'Ahmed Soliman', role: 'Attorney' },
+        { name: 'Hasnaa Mohamed Gad', role: 'Voice Over Artist' },
+      ],
+    },
   },
 ];

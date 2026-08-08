@@ -28,7 +28,7 @@ export const allProjects = [
     image: '/projects/WEB/5ffee697cbc74be39e0eafbb984e2761.jpg',
     aiHint: 'real estate platform',
     tags: ['Shopify', 'CSS', 'JavaScript'],
-    links: [],
+    links: [{ label: 'Visit Website', url: 'https://madinaty-lights.vercel.app/' }],
   },
   {
     id: 4,
@@ -60,6 +60,26 @@ export const allProjects = [
     tags: ['E-commerce', 'Marketing', 'Platform'],
     links: [{ label: 'Visit Website', url: 'https://mawgood.cloud/' }],
   },
+  {
+    id: 14,
+    category: 'Web',
+    title: 'Lobna',
+    description: 'Personal brand website for a sales expert, built to establish professional authority and attract high-value clients.',
+    image: '/projects/WEB/Lobna.jpg',
+    aiHint: 'personal brand sales expert',
+    tags: ['Next.js', 'Tailwind CSS', 'Vercel'],
+    links: [{ label: 'Visit Website', url: 'https://lobna-personal-brand-hte2-one.vercel.app/en' }],
+  },
+  {
+    id: 15,
+    category: 'Web',
+    title: 'Ausrah',
+    description: 'Family coaching consultation platform for booking sessions with certified coaches — for couples, individuals, or children.',
+    image: '/projects/WEB/Ausrah.jpeg',
+    aiHint: 'family coaching platform',
+    tags: ['Next.js', 'Tailwind CSS', 'Vercel'],
+    links: [{ label: 'Visit Website', url: 'https://ausra-omega.vercel.app/' }],
+  },
   // App Projects
   {
     id: 7,
@@ -80,7 +100,7 @@ export const allProjects = [
     image: '/projects/CRM/IMG-20250919-WA0013.jpg',
     aiHint: 'crm system',
     tags: ['Salesforce', 'Custom Development', 'Database'],
-    links: [],
+    links: [{ label: 'Visit Website', url: 'https://sky-crm-mu.vercel.app/' }],
   },
   // UI UX Projects
   {

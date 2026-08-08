@@ -37,11 +37,25 @@ export function ExperienceSection() {
                 <p className="text-xs text-muted-foreground">GCC Expansion</p>
               </div>
             </div>
+            <div className="flex items-center gap-3 bg-card border border-border rounded-2xl px-6 py-3 shadow-sm">
+              <span className="text-2xl">🇨🇦</span>
+              <div className="text-left">
+                <p className="font-bold text-foreground text-sm">Canadian Market</p>
+                <p className="text-xs text-muted-foreground">North America</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 bg-card border border-border rounded-2xl px-6 py-3 shadow-sm">
+              <span className="text-2xl">🇳🇱</span>
+              <div className="text-left">
+                <p className="font-bold text-foreground text-sm">Dutch Market</p>
+                <p className="text-xs text-muted-foreground">European Expansion</p>
+              </div>
+            </div>
           </div>
         </SectionAnimator>
         
         <SectionAnimator delay={0.2}>
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-8 text-center bg-background border-2 border-transparent hover:border-primary/50 transition-colors duration-300 hover:shadow-lg">
               <div className="text-5xl mb-4">🇪🇬</div>
               <h3 className="text-xl font-bold font-headline">Egyptian Market</h3>
@@ -59,6 +73,18 @@ export function ExperienceSection() {
               <h3 className="text-xl font-bold font-headline">Saudi Market</h3>
               <p className="text-md text-primary font-semibold my-1">GCC Expansion</p>
               <p className="text-sm text-muted-foreground mt-2">Provided business tech and marketing solutions for clients in the Saudi Arabian and GCC market.</p>
+            </Card>
+            <Card className="p-8 text-center bg-background border-2 border-transparent hover:border-primary/50 transition-colors duration-300 hover:shadow-lg">
+              <div className="text-5xl mb-4">🇨🇦</div>
+              <h3 className="text-xl font-bold font-headline">Canadian Market</h3>
+              <p className="text-md text-primary font-semibold my-1">North America</p>
+              <p className="text-sm text-muted-foreground mt-2">Expanding business development and strategic partnerships into the Canadian market and North American ecosystem.</p>
+            </Card>
+            <Card className="p-8 text-center bg-background border-2 border-transparent hover:border-primary/50 transition-colors duration-300 hover:shadow-lg">
+              <div className="text-5xl mb-4">🇳🇱</div>
+              <h3 className="text-xl font-bold font-headline">Dutch Market</h3>
+              <p className="text-md text-primary font-semibold my-1">European Expansion</p>
+              <p className="text-sm text-muted-foreground mt-2">Entered the Dutch market through a business training program under entrepreneur Islam Salah at NexFood, gaining direct exposure to European business operations and market dynamics.</p>
             </Card>
           </div>
         </SectionAnimator>

@@ -65,7 +65,7 @@ export function AboutSection() {
                 <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-4xl md:text-5xl">About Omar</h2>
               </div>
               <p className="text-muted-foreground text-lg">
-                "Serving businesses through technology" I have worked in the Egyptian market in companies in different fields and I have worked in more than 4 businesses in the fields of sports, education, clothing, hand-made, and tourism. I have trained a number of young people in the field of programming in training workshops lasting hours. I own an online business that provides software solutions and I aspire to enter more work in markets outside the Egyptian and Saudi markets.
+                I help businesses scale by identifying growth opportunities, entering new markets, and forging strategic partnerships that create real impact. With hands-on experience across multiple industries, I bridge the gap between business goals and execution — turning vision into measurable results.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {metrics.map((metric, index) => (

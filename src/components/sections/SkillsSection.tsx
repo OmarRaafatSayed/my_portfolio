@@ -4,106 +4,56 @@ import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
-  BrainCircuit,
-  Target,
-  Users,
-  PenSquare,
-  MousePointerClick,
-  BarChart3,
-  ShoppingCart,
-  ClipboardCheck,
-  Database
+  TrendingUp,
+  Code2,
+  DollarSign,
+  Briefcase,
 } from 'lucide-react';
 import { SectionAnimator } from '../SectionAnimator';
 
 const skillsData = [
   {
     value: "business",
-    label: "Business establishment",
-    icon: BrainCircuit,
+    label: "Business Development",
+    icon: Briefcase,
     skills: [
-      "Business Planning", "Market Research", "Financial Planning",
-      "Strategic Development", "Risk Management", "Operations Setup",
-    ],
-  },
-  {
-    value: "frontend",
-    label: "Frontend development",
-    icon: Target,
-    skills: [
-      "React", "Next.js", "TypeScript",
-      "HTML/CSS", "JavaScript", "Responsive Design",
-    ],
-  },
-  {
-    value: "backend",
-    label: "Backend developer",
-    icon: Users,
-    skills: [
-      "Node.js", "Python", "Database Design",
-      "API Development", "Server Management", "Security",
-    ],
-  },
-  {
-    value: "app",
-    label: "App development",
-    icon: PenSquare,
-    skills: [
-      "React Native", "Flutter", "Mobile UI/UX",
-      "App Store Optimization", "Cross-platform Development", "Performance Optimization",
-    ],
-  },
-  {
-    value: "uiux",
-    label: "UI UX designer",
-    icon: MousePointerClick,
-    skills: [
-      "User Research", "Wireframing", "Prototyping",
-      "Figma", "Adobe XD", "User Testing",
-    ],
-  },
-  {
-    value: "brand",
-    label: "Brand identity",
-    icon: BarChart3,
-    skills: [
-      "Logo Design", "Brand Guidelines", "Visual Identity",
-      "Color Theory", "Typography", "Brand Strategy",
+      "Market Expansion", "Strategic Partnerships", "Business Planning",
+      "New Market Entry", "Growth Strategy", "Stakeholder Management",
     ],
   },
   {
     value: "marketing",
-    label: "Marketing strategy",
-    icon: ShoppingCart,
+    label: "Marketing & Sales",
+    icon: TrendingUp,
     skills: [
-      "Digital Marketing", "Content Strategy", "Social Media Marketing",
-      "SEO/SEM", "Campaign Management", "Analytics",
+      "Digital Marketing", "Sales Strategy", "Brand Positioning",
+      "Content Marketing", "Lead Generation", "Campaign Management",
     ],
   },
   {
-    value: "team",
-    label: "Team management",
-    icon: ClipboardCheck,
+    value: "software",
+    label: "Software",
+    icon: Code2,
     skills: [
-      "Leadership", "Project Coordination", "Team Building",
-      "Performance Management", "Communication", "Agile Methodologies",
+      "Web Development", "CRM Systems", "Automation Tools",
+      "App Development", "UI/UX", "AI Integration",
     ],
   },
   {
-    value: "crm",
-    label: "CRM developer",
-    icon: Database,
+    value: "finance",
+    label: "Finance & Operations",
+    icon: DollarSign,
     skills: [
-      "Salesforce", "HubSpot", "Custom CRM Development",
-      "Data Integration", "Workflow Automation", "Customer Analytics",
+      "Financial Planning", "Budgeting", "Risk Management",
+      "P&L Analysis", "Operations Setup", "Business Modeling",
     ],
   },
 ];
 
 const summaryStats = [
-  { value: "9", label: "Skill Categories" },
-  { value: "50+", label: "Core Skills" },
-  { value: "5+", label: "Years Experience" },
+  { value: "5+", label: "Markets Entered" },
+  { value: "10+", label: "Businesses Served" },
+  { value: "4+", label: "Years Experience" },
   { value: "500+", label: "People Impacted" },
 ];
 

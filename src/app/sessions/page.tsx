@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { sessions, sessionCategories } from '@/data/sessions';
+import { sessions, sessionCategories, Session } from '@/data/sessions';
 import { VideoCard } from '@/components/VideoCard';
-import { VideoPopup } from '@/components/VideoPopup';
+import { SessionPopup } from '@/components/SessionPopup';
 
 export default function SessionsPage() {
   const [activeCategory, setActiveCategory] = useState('All');
-  const [selectedVideo, setSelectedVideo] = useState<{ url: string; title: string } | null>(null);
+  const [selectedSession, setSelectedSession] = useState<Session | null>(null);
 
   const filteredSessions = activeCategory === 'All'
     ? sessions
@@ -23,7 +23,7 @@ export default function SessionsPage() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-3xl font-bold mb-2">Sessions</h1>
-          <p className="text-muted-foreground mb-6">Watch my recorded lectures and presentations</p>
+          <p className="text-muted-foreground mb-6">My speaking sessions and workshops</p>
 
           {/* Categories */}
           <div className="flex gap-2 overflow-x-auto pb-4 mb-6 scrollbar-hide">
@@ -42,27 +42,26 @@ export default function SessionsPage() {
             ))}
           </div>
 
-          {/* Videos Grid */}
+          {/* Sessions Grid */}
           <div className="grid gap-4">
             {filteredSessions.map((session, index) => (
               <VideoCard
                 key={session.id}
                 session={session}
                 index={index}
-                onClick={() => setSelectedVideo({ url: session.videoUrl, title: session.title })}
+                onClick={() => setSelectedSession(session)}
               />
             ))}
           </div>
         </motion.div>
       </div>
 
-      {/* Video Popup */}
+      {/* Session Detail Popup */}
       <AnimatePresence>
-        {selectedVideo && (
-          <VideoPopup
-            videoUrl={selectedVideo.url}
-            title={selectedVideo.title}
-            onClose={() => setSelectedVideo(null)}
+        {selectedSession && (
+          <SessionPopup
+            session={selectedSession}
+            onClose={() => setSelectedSession(null)}
           />
         )}
       </AnimatePresence>
